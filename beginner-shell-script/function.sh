@@ -13,25 +13,21 @@ do
   echo "5. Quit"
 
   read -p "Enter your choice: " choice
-
+  # if choice is either 1)..2)..3)..4)..5)
   case $choice in
     1)  read_numbers
         echo $(( $number1 + $number2 )) ;;
     2)
         read_numbers
         echo $(( $number1 - $number2 )) ;;
-
     3)
         read_numbers
         echo $(( $number1 * $number2 )) ;;
-
     4)
         read_numbers
         echo $(( $number1 / $number2 )) ;;
-
     5)  break
   esac
-
 done
 
 
